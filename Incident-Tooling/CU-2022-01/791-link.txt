@@ -1,0 +1,4 @@
+http://download.windowsupdate.com/d/msdownload/update/software/updt/2022/01/windows10.0-kb5010791-x64_466ad2172d2cc77b2125420c26b7f9ac00e197f4.msu
+
+
+https://support.microsoft.com/de-de/topic/18-januar-2022-kb5010791-betriebssystem-build-17763-2458-out-of-band-43697313-d8e0-4918-b6df-7f64d4d9a8cd

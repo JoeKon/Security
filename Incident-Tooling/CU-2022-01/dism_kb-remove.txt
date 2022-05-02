@@ -1,0 +1,3 @@
+stop-service netlogon -force
+$package = dism /online /get-packages | findstr 5009619 | foreach {$_.split(":")[1]} | foreach {$_.Trim()}
+dism /online /remove-package /packagename:$package

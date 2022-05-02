@@ -1,0 +1,179 @@
+C:\Windows\system32\ntdsutil.exe: metadata cleanup
+metadata cleanup: remove selected server n-sv-phdc01.tec.dom
+Binding to localhost ...
+Connected to localhost using credentials of locally logged on user.
+LDAP error 0x22(34 (Invalid DN Syntax).
+Ldap extended error message is 0000208F: NameErr: DSID-0310022E, problem 2006 (BAD_NAME), data 8350, best match of:
+        'CN=Ntds Settings,n-sv-phdc01.tec.dom'
+
+Win32 error returned is 0x208f(The object name has bad syntax.)
+)
+Unable to determine the domain hosted by the Active Directory Domain Controller (5). Please use the connection menu to specify it.
+metadata cleanup: remove selected server n-sv-phdc01
+A global connection already exists. No arguments should be specified.
+metadata cleanup: remove selected server n-sv-phdc01
+A global connection already exists. No arguments should be specified.
+metadata cleanup: connection
+Connected to localhost using credentials of locally logged on user.
+server connections: ?
+
+ ?                             - Show this help information
+ Clear creds                   - Clear prior connection credentials
+ Connect to domain %s          - Connect to DNS domain name
+ Connect to server %s          - Connect to server, DNS name[:port number]
+ Help                          - Show this help information
+ Info                          - Show connection information
+ Quit                          - Return to the prior menu
+ Set creds %s1 %s2 %s3         - Set connection creds as domain %s1, user %s2,
+                                 pwd %s3.  Use "NULL" for null password,
+                                 * to enter password from the console.
+
+server connections: info
+Connected to localhost using credentials of locally logged on user.
+server connections: connect to server c-sv-vedc
+Disconnecting from localhost...
+Binding to c-sv-vedc ...
+Connected to c-sv-vedc using credentials of locally logged on user.
+server connections: remove selected server n-sv-phdc01
+Error parsing Input - Invalid Syntax.
+server connections: exit
+Error parsing Input - Invalid Syntax.
+server connections: quit
+metadata cleanup: remove selected server n-sv-phdc01
+A global connection already exists. No arguments should be specified.
+metadata cleanup: info
+Error parsing Input - Invalid Syntax.
+metadata cleanup: ?
+
+ ?                             - Show this help information
+ Connections                   - Connect to a specific AD DC/LDS instance
+ Help                          - Show this help information
+ Quit                          - Return to the prior menu
+ Remove selected domain        - Remove AD DS objects for selected domain
+ Remove selected Naming Context - Remove objects for selected Naming Context
+ Remove selected server        - Remove objects for selected server
+ Remove selected server %s     - Remove objects for selected server
+ Remove selected server %s on %s - Remove objects for selected server
+ Select operation target       - Select sites, servers, domains, roles and
+                                 naming contexts
+
+metadata cleanup: select operation target
+select operation target: ?
+
+ ?                             - Show this help information
+ Connections                   - Connect to a specific AD DC/LDS instance
+ Help                          - Show this help information
+ List current selections       - List the current site/domain/server/Naming Context
+ List domains                  - Lists all domains which have Cross-Refs
+ List domains in site          - Lists domains in the selected site
+ List Naming Contexts          - Lists known Naming Contexts
+ List roles for connected server - Lists roles connected server knows about
+ List servers for domain in site - Lists servers for selected domain and site
+ List servers in site          - Lists servers in selected site
+ List sites                    - List sites in the enterprise
+ Quit                          - Return to the prior menu
+ Select domain %d              - Make domain %d the selected domain
+ Select Naming Context %d      - Make Naming Context %d the selected Naming Context
+ Select server %d              - Make server %d the selected server
+ Select site %d                - Make site %d the selected site
+
+select operation target: select server n-sv-phdc01
+Error parsing Input - Invalid Syntax.
+select operation target: list
+Error parsing Input - Invalid Syntax.
+select operation target: list current selections
+No current site
+No current domain
+No current server
+No current Naming Context
+select operation target: exit
+Error parsing Input - Invalid Syntax.
+select operation target: quit
+metadata cleanup: remove selected server n-sv-phdc01
+A global connection already exists. No arguments should be specified.
+metadata cleanup: server connections
+Error parsing Input - Invalid Syntax.
+metadata cleanup: quit
+C:\Windows\system32\ntdsutil.exe: server connections
+Error parsing Input - Invalid Syntax.
+C:\Windows\system32\ntdsutil.exe: metadata cleanup
+metadata cleanup: connections
+Connected to c-sv-vedc using credentials of locally logged on user.
+server connections: q
+metadata cleanup: select operation target
+select operation target: list domains
+Found 1 domain(s)
+0 - DC=TEC,DC=DOM
+select operation target: 0
+Error parsing Input - Invalid Syntax.
+select operation target: select 0
+Error parsing Input - Invalid Syntax.
+select operation target: list domains
+Found 1 domain(s)
+0 - DC=TEC,DC=DOM
+select operation target: select domain 0
+No current site
+Domain - DC=TEC,DC=DOM
+No current server
+No current Naming Context
+
+select operation target: list sites
+Found 18 site(s)
+0 - CN=Site-Cologne,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+1 - CN=Site-Munich,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+2 - CN=Site-Weikersheim,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+3 - CN=Site-Shanghai,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+4 - CN=Site-Tenerife,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+5 - CN=Site-Maastricht,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+6 - CN=Site-KualaLumpur,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+7 - CN=Site-Bangkok,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+8 - CN=Site-Chennai,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+9 - CN=Site-Montreal,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+10 - CN=Site-HongKong,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+11 - CN=Site-MexicoCity,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+12 - CN=Site-SaoPaulo,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+13 - CN=Site-Moskow,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+14 - CN=Site-Amazon,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+15 - CN=Site-Azure,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+16 - CN=Site-TEST,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+17 - CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+
+select operation target: select site 17
+Site - CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+Domain - DC=TEC,DC=DOM
+No current server
+No current Naming Context
+select operation target: list servers
+Error parsing Input - Invalid Syntax.
+select operation target: list server
+Error parsing Input - Invalid Syntax.
+
+select operation target: list servers in site
+Found 1 server(s)
+0 - CN=N-SV-PHDC01,CN=Servers,CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+
+select operation target: select server 0
+Site - CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+Domain - DC=TEC,DC=DOM
+Server - CN=N-SV-PHDC01,CN=Servers,CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+        DSA object - CN=NTDS Settings,CN=N-SV-PHDC01,CN=Servers,CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM
+        DNS host name - N-SV-PHDC01.TEC.DOM
+        Computer object - CN=N-SV-PHDC01,CN=Computers,DC=TEC,DC=DOM
+No current Naming Context
+select operation target: q
+
+metadata cleanup: remove selected server
+Transferring / Seizing FSMO roles off the selected server.
+DsRemoveDsServerW error 0x5(Access is denied.)
+
+==> use Sites and Services and remove all "Object Protection"
+
+metadata cleanup: remove selected server
+Transferring / Seizing FSMO roles off the selected server.
+Removing FRS metadata for the selected server.
+Searching for FRS members under "CN=N-SV-PHDC01,CN=Computers,DC=TEC,DC=DOM".
+Deleting subtree under "CN=N-SV-PHDC01,CN=Computers,DC=TEC,DC=DOM".
+The attempt to remove the FRS settings on CN=N-SV-PHDC01,CN=Servers,CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM failed because "Element not found.";
+metadata cleanup is continuing.
+"CN=N-SV-PHDC01,CN=Servers,CN=Site-ISOLATION,CN=Sites,CN=Configuration,DC=TEC,DC=DOM" removed from server "c-sv-vedc"
+metadata cleanup:
